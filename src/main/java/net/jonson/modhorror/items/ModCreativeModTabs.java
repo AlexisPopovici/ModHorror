@@ -19,6 +19,7 @@ public class ModCreativeModTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                          output.accept(ModItems.SAPPHIRE.get());
                         output.accept(ModItems.RAW_SAPPHIRE.get());
+                        output.accept(ModItems.BLOODY_SAPPHIRE.get());
                     })
                     .build());
 
