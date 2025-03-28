@@ -1,6 +1,9 @@
 package net.jonson.modhorror;
 
 import com.mojang.logging.LogUtils;
+import net.jonson.modhorror.items.ModCreativeModTabs;
+import net.jonson.modhorror.items.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -15,7 +18,7 @@ import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(ModHorror.MOD_ID)
-public class ModHorror {
+public class    ModHorror {
 
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "modhorror";
@@ -24,6 +27,10 @@ public class ModHorror {
 
     public ModHorror() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModCreativeModTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -40,7 +47,10 @@ public class ModHorror {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.SAPPHIRE);
+            event.accept(ModItems.RAW_SAPPHIRE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
