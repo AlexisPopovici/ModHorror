@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "north": "modhorror:block/bloody_sapphire_north_block",
+    "south": "modhorror:block/bloody_sapphire_sew_block",
+    "east": "modhorror:block/bloody_sapphire_sew_block",
+    "west": "modhorror:block/bloody_sapphire_sew_block",
+    "up": "modhorror:block/bloody_sapphire_up_block",
+    "down": "modhorror:block/sapphire_block",
+    "particle": "modhorror:block/bloody_sapphire_sew_block"
+  }
+}

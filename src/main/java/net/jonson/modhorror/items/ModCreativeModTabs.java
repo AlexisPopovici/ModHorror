@@ -25,6 +25,7 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         output.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                         output.accept(ModBlocks.GALAXY_BLOCK.get());
+                        output.accept(ModBlocks.BLOODY_SAPPHIRE_BLOCK.get());
                     })
                     .build());
 

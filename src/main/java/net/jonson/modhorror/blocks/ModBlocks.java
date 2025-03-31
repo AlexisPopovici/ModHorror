@@ -39,6 +39,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> GALAXY_BLOCK = registerBlock("galaxy_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN).sound(SoundType.AMETHYST)));
 
+    public static final RegistryObject<Block> BLOODY_SAPPHIRE_BLOCK = registerBlock("bloody_sapphire_block",
+            () -> new BloodySapphireBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
