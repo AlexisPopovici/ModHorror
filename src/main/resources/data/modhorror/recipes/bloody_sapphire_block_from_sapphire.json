@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "modhorror:bloody_sapphire"
+    }
+
+  },
+
+  "result": {
+    "item": "modhorror:bloody_sapphire_block",
+    "count": 1
+  }
+}
+
