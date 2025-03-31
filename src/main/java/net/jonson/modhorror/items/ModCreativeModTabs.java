@@ -1,6 +1,7 @@
 package net.jonson.modhorror.items;
 
 import net.jonson.modhorror.ModHorror;
+import net.jonson.modhorror.blocks.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -20,6 +21,10 @@ public class ModCreativeModTabs {
                          output.accept(ModItems.SAPPHIRE.get());
                         output.accept(ModItems.RAW_SAPPHIRE.get());
                         output.accept(ModItems.BLOODY_SAPPHIRE.get());
+
+                        output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
+                        output.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
+                        output.accept(ModBlocks.GALAXY_BLOCK.get());
                     })
                     .build());
 

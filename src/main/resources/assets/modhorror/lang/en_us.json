@@ -2,5 +2,8 @@
   "item.modhorror.sapphire": "Sapphire",
   "item.modhorror.raw_sapphire": "Raw Sapphire",
   "item.modhorror.bloody_sapphire": "Bloody Sapphire",
-  "creativetab.horror_tab": "Horror Tab"
+  "creativetab.horror_tab": "Horror Tab",
+  "block.modhorror.sapphire_block": "Block Of Sapphire",
+  "block.modhorror.raw_sapphire_block": "Raw Sapphire",
+  "block.modhorror.galaxy_block": "Galaxy Block"
 }

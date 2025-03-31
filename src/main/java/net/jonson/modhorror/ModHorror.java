@@ -1,6 +1,7 @@
 package net.jonson.modhorror;
 
 import com.mojang.logging.LogUtils;
+import net.jonson.modhorror.blocks.ModBlocks;
 import net.jonson.modhorror.items.ModCreativeModTabs;
 import net.jonson.modhorror.items.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -31,6 +32,7 @@ public class    ModHorror {
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
