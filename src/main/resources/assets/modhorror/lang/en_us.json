@@ -2,9 +2,17 @@
   "item.modhorror.sapphire": "Sapphire",
   "item.modhorror.raw_sapphire": "Raw Sapphire",
   "item.modhorror.bloody_sapphire": "Bloody Sapphire",
+  "item.modhorror.sapphire_detector": "Sapphire Detector",
+
   "creativetab.horror_tab": "Horror Tab",
+
   "block.modhorror.sapphire_block": "Block Of Sapphire",
   "block.modhorror.raw_sapphire_block": "Raw Sapphire",
   "block.modhorror.galaxy_block": "Galaxy Block",
-  "block.modhorror.bloody_sapphire_block": "Bloody Sapphire Block"
+  "block.modhorror.bloody_sapphire_block": "Bloody Sapphire Block",
+
+  "block.modhorror.sapphire_ore": "Sapphire Ore",
+  "block.modhorror.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+  "block.modhorror.end_stone_sapphire_ore": "Endstone Sapphire Ore",
+  "block.modhorror.nether_sapphire_ore": "Nether Sapphire Ore"
 }

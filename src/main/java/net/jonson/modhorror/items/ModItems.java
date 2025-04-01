@@ -1,6 +1,7 @@
 package net.jonson.modhorror.items;
 
 import net.jonson.modhorror.ModHorror;
+import net.jonson.modhorror.items.custom.SapphireDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,6 +20,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> BLOODY_SAPPHIRE = ITEMS.register("bloody_sapphire",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> SAPPHIRE_DETECTOR = ITEMS.register("sapphire_detector",
+            () -> new SapphireDetectorItem(new Item.Properties().durability(1000)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

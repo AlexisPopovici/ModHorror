@@ -2,6 +2,10 @@
   "values": [
     "modhorror:sapphire_block",
     "modhorror:raw_sapphire_block",
-    "modhorror:bloody_sapphire_block"
+    "modhorror:bloody_sapphire_block",
+    "modhorror:sapphire_ore",
+    "modhorror:nether_sapphire_ore",
+    "modhorror:deepslate_sapphire_ore",
+    "modhorror:end_stone_sapphire_ore"
   ]
 }

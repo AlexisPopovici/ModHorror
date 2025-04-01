@@ -21,11 +21,18 @@ public class ModCreativeModTabs {
                          output.accept(ModItems.SAPPHIRE.get());
                         output.accept(ModItems.RAW_SAPPHIRE.get());
                         output.accept(ModItems.BLOODY_SAPPHIRE.get());
+                        output.accept(ModItems.SAPPHIRE_DETECTOR.get());
 
                         output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         output.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                         output.accept(ModBlocks.GALAXY_BLOCK.get());
                         output.accept(ModBlocks.BLOODY_SAPPHIRE_BLOCK.get());
+
+                        output.accept(ModBlocks.SAPPHIRE_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
+                        output.accept(ModBlocks.NETHER_SAPPHIRE_ORE.get());
+                        output.accept(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
+
                     })
                     .build());
 
