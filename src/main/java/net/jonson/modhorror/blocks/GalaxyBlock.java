@@ -1,9 +1,12 @@
 package net.jonson.modhorror.blocks;
 
+import net.jonson.modhorror.sounds.ModSounds;
 import net.minecraft.core.BlockPos;
+
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -19,11 +22,14 @@ public class GalaxyBlock extends Block {
     }
 
     @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer,
-                                 InteractionHand pHand, BlockHitResult pHit) {
-        pLevel.playSound(pPlayer,pPos, SoundEvents.NOTE_BLOCK_FLUTE.get(), SoundSource.BLOCKS,1f,1f);
+    public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player,
+                                 InteractionHand hand, BlockHitResult hit) {
+        if (!level.isClientSide) {
+            level.playSound(null, pos, ModSounds.GALAXY_BLOCK_SOUND.get(), SoundSource.BLOCKS, 1.0f, 1.0f);
+        }
         return InteractionResult.SUCCESS;
     }
+
 
     @Override
     public void onPlace(BlockState pState, Level pLevel, BlockPos pPos, BlockState pOldState, boolean pMovedByPiston) {

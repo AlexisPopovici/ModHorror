@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.jonson.modhorror.blocks.ModBlocks;
 import net.jonson.modhorror.items.ModCreativeModTabs;
 import net.jonson.modhorror.items.ModItems;
+import net.jonson.modhorror.sounds.ModSounds;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -19,7 +20,7 @@ import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(ModHorror.MOD_ID)
-public class    ModHorror {
+public class        ModHorror {
 
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "modhorror";
@@ -33,6 +34,7 @@ public class    ModHorror {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

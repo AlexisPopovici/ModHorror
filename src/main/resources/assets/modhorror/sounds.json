@@ -1,0 +1,12 @@
+{
+  "galaxy_block_sound": {
+    "category": "block",
+    "subtitle": "sound.modhorror.galaxy_block_sound",
+    "sounds": [
+      {
+        "name": "modhorror:blocks/galaxy_block_sound",
+        "stream": false
+      }
+    ]
+  }
+}
