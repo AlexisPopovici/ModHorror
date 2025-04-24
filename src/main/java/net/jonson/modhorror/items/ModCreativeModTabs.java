@@ -18,16 +18,23 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SAPPHIRE.get()))
                     .title(Component.translatable("creativetab.horror_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
-                         output.accept(ModItems.SAPPHIRE.get());
+
+                        /// ITEMS
+                        output.accept(ModItems.SAPPHIRE.get());
                         output.accept(ModItems.RAW_SAPPHIRE.get());
                         output.accept(ModItems.BLOODY_SAPPHIRE.get());
                         output.accept(ModItems.SAPPHIRE_DETECTOR.get());
 
+                        /// FOODS
+                        output.accept(ModItems.STRAWBERRY.get());
+
+                        /// BLOCK-URI
                         output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         output.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                         output.accept(ModBlocks.GALAXY_BLOCK.get());
                         output.accept(ModBlocks.BLOODY_SAPPHIRE_BLOCK.get());
 
+                        ///  ORE-URI
                         output.accept(ModBlocks.SAPPHIRE_ORE.get());
                         output.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
                         output.accept(ModBlocks.NETHER_SAPPHIRE_ORE.get());

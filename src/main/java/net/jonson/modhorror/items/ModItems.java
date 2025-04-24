@@ -24,6 +24,9 @@ public class ModItems {
     public static final RegistryObject<Item> SAPPHIRE_DETECTOR = ITEMS.register("sapphire_detector",
             () -> new SapphireDetectorItem(new Item.Properties().durability(1000)));
 
+    public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry",
+            () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY)));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
