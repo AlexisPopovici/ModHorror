@@ -1,6 +1,8 @@
 package net.jonson.modhorror.blocks;
 
 import net.jonson.modhorror.ModHorror;
+import net.jonson.modhorror.blocks.custom.BloodySapphireBlock;
+import net.jonson.modhorror.blocks.custom.GalaxyBlock;
 import net.jonson.modhorror.items.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -42,7 +44,7 @@ public class ModBlocks {
             () -> new GalaxyBlock(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN)));
 
     public static final RegistryObject<Block> BLOODY_SAPPHIRE_BLOCK = registerBlock("bloody_sapphire_block",
-            () -> new BloodySapphireBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+            () -> new BloodySapphireBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.SOUL_SAND)));
 
     public static final RegistryObject<Block> SAPPHIRE_ORE = registerBlock("sapphire_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)

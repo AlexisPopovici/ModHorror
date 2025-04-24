@@ -1,20 +1,25 @@
-package net.jonson.modhorror.blocks;
+package net.jonson.modhorror.blocks.custom;
 
 import net.jonson.modhorror.sounds.ModSounds;
 import net.minecraft.core.BlockPos;
 
-import net.minecraft.sounds.SoundEvent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.phys.BlockHitResult;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class GalaxyBlock extends Block {
     public GalaxyBlock(Properties pProperties) {
@@ -44,5 +49,11 @@ public class GalaxyBlock extends Block {
         if (!pLevel.isClientSide) { // Asigură-te că rulează doar pe server
             pLevel.playSound(null, pPos, SoundEvents.NOTE_BLOCK_FLUTE.get(), SoundSource.BLOCKS, 1.0f, 1.0f);
         }
+    }
+
+    @Override
+    public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+        pTooltip.add(Component.translatable("tooltip.modhorror.galaxy_block.tooltip"));
+        super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
     }
 }

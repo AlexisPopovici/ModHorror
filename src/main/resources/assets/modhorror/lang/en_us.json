@@ -8,6 +8,8 @@
 
   "item.modhorror.strawberry": "Strawberry",
 
+  "item.modhorror.pine_cone": "Pine Cone",
+
   "block.modhorror.sapphire_block": "Block Of Sapphire",
   "block.modhorror.raw_sapphire_block": "Raw Sapphire",
   "block.modhorror.galaxy_block": "Galaxy Block",
@@ -16,5 +18,9 @@
   "block.modhorror.sapphire_ore": "Sapphire Ore",
   "block.modhorror.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
   "block.modhorror.end_stone_sapphire_ore": "Endstone Sapphire Ore",
-  "block.modhorror.nether_sapphire_ore": "Nether Sapphire Ore"
+  "block.modhorror.nether_sapphire_ore": "Nether Sapphire Ore",
+
+  "tooltip.modhorror.sapphire_detector.tooltip": "Finds valuable Sapphire underground!",
+  "tooltip.modhorror.galaxy_block.tooltip": "A piece of the universe, holding secrets no player should uncover.",
+  "tooltip.modhorror.bloody_sapphire_block.tooltip" : "It hums. It glows. It watches."
 }
