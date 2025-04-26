@@ -24,6 +24,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.RAW_SAPPHIRE.get());
                         output.accept(ModItems.BLOODY_SAPPHIRE.get());
                         output.accept(ModItems.SAPPHIRE_DETECTOR.get());
+                        output.accept(ModItems.METAL_DETECTOR.get());
                         output.accept(ModItems.PINE_CONE.get());
 
                         /// FOODS

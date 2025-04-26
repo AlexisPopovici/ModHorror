@@ -3,6 +3,7 @@
   "item.modhorror.raw_sapphire": "Raw Sapphire",
   "item.modhorror.bloody_sapphire": "Bloody Sapphire",
   "item.modhorror.sapphire_detector": "Sapphire Detector",
+  "item.modhorror.metal_detector": "Metal Detector",
 
   "creativetab.horror_tab": "Horror Tab",
 
@@ -21,6 +22,7 @@
   "block.modhorror.nether_sapphire_ore": "Nether Sapphire Ore",
 
   "tooltip.modhorror.sapphire_detector.tooltip": "Finds valuable Sapphire underground!",
+  "tooltip.modhorror.metal_detector.tooltip": "Finds valuable metals underground!",
   "tooltip.modhorror.galaxy_block.tooltip": "A piece of the universe, holding secrets no player should uncover.",
   "tooltip.modhorror.bloody_sapphire_block.tooltip" : "It hums. It glows. It watches."
 }
