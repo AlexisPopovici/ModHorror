@@ -16,7 +16,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(ModBlocks.BLOODY_SAPPHIRE_BLOCK);
+        customBloodySapphireBlock(ModBlocks.BLOODY_SAPPHIRE_BLOCK);
         blockWithItem(ModBlocks.SAPPHIRE_BLOCK);
         blockWithItem(ModBlocks.GALAXY_BLOCK);
         blockWithItem(ModBlocks.RAW_SAPPHIRE_BLOCK);
@@ -25,6 +25,24 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.END_STONE_SAPPHIRE_ORE);
         blockWithItem(ModBlocks.NETHER_SAPPHIRE_ORE);
         blockWithItem(ModBlocks.SAPPHIRE_ORE);
+    }
+
+    private void customBloodySapphireBlock(RegistryObject<Block> blockRegistryObject) {
+        this.horizontalBlock(blockRegistryObject.get(),
+                models().cube(blockRegistryObject.getId().getPath(),
+                                modLoc("block/sapphire_block"),
+                                modLoc("block/bloody_sapphire_up_block"),
+                                modLoc("block/bloody_sapphire_north_block"),
+                                modLoc("block/bloody_sapphire_sew_block"),
+                                modLoc("block/bloody_sapphire_sew_block"),
+                                modLoc("block/bloody_sapphire_sew_block")
+
+                        )
+                        .texture("particle", modLoc("block/bloody_sapphire_sew_block"))
+        );
+
+        this.itemModels().getBuilder(blockRegistryObject.getId().getPath())
+                .parent(models().getExistingFile(blockRegistryObject.getId()));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject){

@@ -75,7 +75,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" S ")
                 .pattern("AA ")
                 .define('S', Items.STICK)
-                .define('A', Items.IRON_BARS)
+                .define('A', Items.IRON_INGOT)
                 .unlockedBy(getHasName(ModItems.BLOODY_SAPPHIRE.get()), has(ModItems.BLOODY_SAPPHIRE.get()))
                 .save(pWriter);
 

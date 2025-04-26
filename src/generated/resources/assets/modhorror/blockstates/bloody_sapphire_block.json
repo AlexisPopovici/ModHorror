@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "modhorror:block/bloody_sapphire_block",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "modhorror:block/bloody_sapphire_block"
+    },
+    "facing=south": {
+      "model": "modhorror:block/bloody_sapphire_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "modhorror:block/bloody_sapphire_block",
+      "y": 270
+    }
+  }
+}

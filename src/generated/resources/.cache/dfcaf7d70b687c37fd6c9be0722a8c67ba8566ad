@@ -1,0 +1,6 @@
+// 1.20.1	2025-04-27T02:00:54.6000377	Tags for minecraft:block mod id modhorror
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_netherite_tool.json
+9e5f08429fc3a41ef0793018ce70f2b1aab37a55 data/minecraft/tags/blocks/mineable/pickaxe.json
+ed5a4a6bad19bfb2d20862eaa55d633151cd6978 data/minecraft/tags/blocks/needs_diamond_tool.json
+cc055e91cb5879df57c28cd5c3faaa162b523f86 data/minecraft/tags/blocks/needs_iron_tool.json
+fb3b5b988085857afa12d3f39045561aa4d9ab71 data/modhorror/tags/blocks/metal_detector_valuables.json
