@@ -46,6 +46,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.SAPPHIRE_TRAPDOOR.get()),
                 modLoc("block/sapphire_trapdoor"), true, "cutout");
 
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.HORROR_DOOR.get()),
+                modLoc("block/horror_door_bottom"),
+                modLoc("block/horror_door_top"), "cutout");
 
     }
 

@@ -3,7 +3,9 @@ package net.jonson.modhorror.blocks;
 import net.jonson.modhorror.ModHorror;
 import net.jonson.modhorror.blocks.custom.BloodySapphireBlock;
 import net.jonson.modhorror.blocks.custom.GalaxyBlock;
+import net.jonson.modhorror.blocks.custom.HorrorDoorBlock;
 import net.jonson.modhorror.items.ModItems;
+import net.minecraft.client.resources.model.Material;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -11,12 +13,16 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
+import net.minecraftforge.client.model.obj.ObjMaterialLibrary;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
+
+import static net.minecraft.world.item.Tiers.WOOD;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
@@ -83,6 +89,14 @@ public class ModBlocks {
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).noOcclusion(), BlockSetType.IRON));
     public static final RegistryObject<Block> SAPPHIRE_TRAPDOOR = registerBlock("sapphire_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).noOcclusion(), BlockSetType.IRON));
+
+
+    public static final RegistryObject<Block> HORROR_DOOR = registerBlock("horror_door",
+            () -> new HorrorDoorBlock(BlockBehaviour.Properties.of()
+                    .instabreak()
+                    .sound(SoundType.WOOD)
+                    .noOcclusion().noLootTable(),
+                    BlockSetType.IRON));
 
 
 
