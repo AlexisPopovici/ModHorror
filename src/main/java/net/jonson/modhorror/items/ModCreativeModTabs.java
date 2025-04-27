@@ -42,6 +42,20 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.NETHER_SAPPHIRE_ORE.get());
                         output.accept(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
 
+                        
+                        /// SAPPHIRE STAIRS DOORS ETC
+                        output.accept(ModBlocks.SAPPHIRE_STAIRS.get());
+                        output.accept(ModBlocks.SAPPHIRE_SLAB.get());
+                        output.accept(ModBlocks.SAPPHIRE_BUTTON.get());
+                        output.accept(ModBlocks.SAPPHIRE_PRESSURE_PLATE.get());
+
+                        output.accept(ModBlocks.SAPPHIRE_FENCE.get());
+                        output.accept(ModBlocks.SAPPHIRE_FENCE_GATE.get());
+                        output.accept(ModBlocks.SAPPHIRE_WALL.get());
+
+                        output.accept(ModBlocks.SAPPHIRE_DOOR.get());
+                        output.accept(ModBlocks.SAPPHIRE_TRAPDOOR.get());
+
                     })
                     .build());
 

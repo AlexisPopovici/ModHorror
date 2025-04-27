@@ -1,8 +1,17 @@
-// 1.20.1	2025-04-27T02:00:54.6000377	Item Models: modhorror
+// 1.20.1	2025-04-27T22:29:42.501643	Item Models: modhorror
 635e9c63fcc09067e6db568fed84cf630c475d75 assets/modhorror/models/item/bloody_sapphire.json
 558dbbb3a29924ab265efe6f0c16ed5f14ecea9e assets/modhorror/models/item/metal_detector.json
 9e12fc0ef5a3f549a60e78e039b3f8d732a597f8 assets/modhorror/models/item/pine_cone.json
 b77472a972cb68e3498e2b235a46afa984237c85 assets/modhorror/models/item/raw_sapphire.json
 fec629fbd4577ba3fe6633f3cc2a816803459f8d assets/modhorror/models/item/sapphire.json
+1a689e6faab0c208c16313ff3fab20fdaebc5f19 assets/modhorror/models/item/sapphire_button.json
 9a36070498936e73cb81929368b5970e729679c5 assets/modhorror/models/item/sapphire_detector.json
+a2de36e555ae2593a27843287ad11c5b70cb7ff4 assets/modhorror/models/item/sapphire_door.json
+908af4ce6b30ae94358be25f0a0cfe10db855a4d assets/modhorror/models/item/sapphire_fence.json
+2ce99aeeed1cc839521d3bcd69df412256604864 assets/modhorror/models/item/sapphire_fence_gate.json
+20435056446834f55c18df7598f7a0752ad10353 assets/modhorror/models/item/sapphire_pressure_plate.json
+594274f5b147c529d6e37c37d7882a62e36a56f8 assets/modhorror/models/item/sapphire_slab.json
+e18e043560ab69ba3f89875585d3423876416796 assets/modhorror/models/item/sapphire_stairs.json
+c5233e50e68893205ef821ea6b171c128886b99f assets/modhorror/models/item/sapphire_trapdoor.json
+cf2dbf078bc48c1b16f2f0f8443173b679a65863 assets/modhorror/models/item/sapphire_wall.json
 f2e6526a67e6cadf65298aa908019df350de77b4 assets/modhorror/models/item/strawberry.json

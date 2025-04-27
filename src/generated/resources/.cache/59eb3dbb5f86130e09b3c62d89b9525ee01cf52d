@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-27T02:00:54.6000377	Loot Tables
+// 1.20.1	2025-04-27T22:29:42.4995649	Loot Tables
 04f9a275ac05d716845b2175f53b700bc1d7da4e data/modhorror/loot_tables/blocks/bloody_sapphire_block.json
 eea52555659b07784ce79a47d5c81fd105e3b539 data/modhorror/loot_tables/blocks/deepslate_sapphire_ore.json
 0f89ceb8810d4f46ff7d19aed9dc58cb2d2333dc data/modhorror/loot_tables/blocks/end_stone_sapphire_ore.json
@@ -6,4 +6,13 @@ e146cb56c04c079a89d2463b4a1c53ee48d986ee data/modhorror/loot_tables/blocks/galax
 6ce94520fd0933541dbcf1a890caf653cd1e8e40 data/modhorror/loot_tables/blocks/nether_sapphire_ore.json
 6942b2f164d02789e207669257af16c5582d61f8 data/modhorror/loot_tables/blocks/raw_sapphire_block.json
 8bab63652f017b04cbb3027a953f3aa1b75d0a32 data/modhorror/loot_tables/blocks/sapphire_block.json
+0e8787db7dfbe78fc236ce223d699e043ba627e2 data/modhorror/loot_tables/blocks/sapphire_button.json
+9a4f3c8df2c8a703e74132c7540169cf04a5ee06 data/modhorror/loot_tables/blocks/sapphire_door.json
+9b9f4c81123180f4dd983bae48f55bf1244b197b data/modhorror/loot_tables/blocks/sapphire_fence.json
+2978c1df63c0f362d22e017d41b14a809f1a6330 data/modhorror/loot_tables/blocks/sapphire_fence_gate.json
 9a0d0de01016a807e2a1afbf0f0ff79f720d8682 data/modhorror/loot_tables/blocks/sapphire_ore.json
+a43ff67937e3e5f5ba2ae214c82ef505e75f5b04 data/modhorror/loot_tables/blocks/sapphire_pressure_plate.json
+661ff1486286e6261af0676418ae0bc17b111bcb data/modhorror/loot_tables/blocks/sapphire_slab.json
+5aa7e93db05cf535e727aa288413db5c46331fab data/modhorror/loot_tables/blocks/sapphire_stairs.json
+ef3c8eed1e37ba90dc56df7d8e0d8075e51f0cb2 data/modhorror/loot_tables/blocks/sapphire_trapdoor.json
+1d488970a130963f38960081851eb35645fcbf11 data/modhorror/loot_tables/blocks/sapphire_wall.json
