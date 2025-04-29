@@ -31,8 +31,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                     .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get())
                     .add(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
 
-        this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.GALAXY_BLOCK.get());
+        this.tag(BlockTags.NEEDS_DIAMOND_TOOL);
+
 
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
 
@@ -54,6 +54,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.WALLS)
                 .add(ModBlocks.SAPPHIRE_WALL.get());
 
+
+        this.tag(ModTags.Blocks.NEEDS_SAPPHIRE_TOOL)
+                .add(ModBlocks.GALAXY_BLOCK.get());
     }
 
 }
