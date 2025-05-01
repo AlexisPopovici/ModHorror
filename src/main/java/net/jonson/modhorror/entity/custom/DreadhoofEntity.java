@@ -34,12 +34,12 @@ public class DreadhoofEntity extends Monster {
 
 
     public static AttributeSupplier.Builder createAttributes(){
-        return Monster.createMonsterAttributes().add(Attributes.MAX_HEALTH, 15D)
-                .add(Attributes.MOVEMENT_SPEED, 5D)
+        return Monster.createMonsterAttributes().add(Attributes.MAX_HEALTH, 35D)
+                .add(Attributes.MOVEMENT_SPEED, 1D)
                 .add(Attributes.ARMOR_TOUGHNESS, 0.1f)
                 .add(Attributes.ATTACK_KNOCKBACK,0.5f)
                 .add(Attributes.FOLLOW_RANGE, 24D)
-                .add(Attributes.ATTACK_DAMAGE, 2f);
+                .add(Attributes.ATTACK_DAMAGE, 10f);
     }
 }
 

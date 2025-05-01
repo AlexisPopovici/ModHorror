@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "modhorror:block/sapphire_slab"
+    },
+    "type=double": {
+      "model": "modhorror:block/sapphire_block"
+    },
+    "type=top": {
+      "model": "modhorror:block/sapphire_slab_top"
+    }
+  }
+}

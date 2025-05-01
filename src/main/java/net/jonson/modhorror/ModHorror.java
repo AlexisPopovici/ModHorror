@@ -2,11 +2,15 @@ package net.jonson.modhorror;
 
 import com.mojang.logging.LogUtils;
 import net.jonson.modhorror.blocks.ModBlocks;
+import net.jonson.modhorror.entity.ModEntities;
+import net.jonson.modhorror.entity.client.DreadhoofRenderer;
 import net.jonson.modhorror.items.ModCreativeModTabs;
 import net.jonson.modhorror.items.ModItems;
 import net.jonson.modhorror.sounds.ModSounds;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -35,6 +39,7 @@ public class        ModHorror {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModSounds.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -68,8 +73,10 @@ public class        ModHorror {
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
 
+
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            EntityRenderers.register(ModEntities.DREADHOOF.get(), DreadhoofRenderer::new);
 
         }
     }

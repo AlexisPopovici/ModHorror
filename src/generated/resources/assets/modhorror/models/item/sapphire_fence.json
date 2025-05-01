@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_inventory",
+  "textures": {
+    "texture": "modhorror:block/sapphire_block"
+  }
+}
