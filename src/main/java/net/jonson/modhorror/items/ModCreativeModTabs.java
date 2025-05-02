@@ -66,7 +66,8 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.SAPPHIRE_PICKAXE.get());
                         output.accept(ModItems.SAPPHIRE_HOE.get());
 
-
+                        /// DREADHOOF EGG
+                        output.accept(ModItems.DREADHOOF_SPAWN_EGG.get());
 
                     })
                     .build());

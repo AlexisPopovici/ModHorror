@@ -5,11 +5,14 @@ package net.jonson.modhorror.entity.client;// Made with Blockbench 4.12.4
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
+import net.jonson.modhorror.entity.animations.ModAnimationDefinitions;
+import net.jonson.modhorror.entity.custom.DreadhoofEntity;
 import net.minecraft.client.model.HierarchicalModel;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
 
+import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
 
 public class DreadhoofModel<T extends Entity> extends HierarchicalModel<T> {
@@ -109,12 +112,28 @@ public class DreadhoofModel<T extends Entity> extends HierarchicalModel<T> {
 	}
 
 	@Override
-	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
+						  float headPitch) {
+		this.root().getAllParts().forEach(ModelPart::resetPose);
+		this.applyHeadRotation(netHeadYaw,headPitch,ageInTicks);
 
+		this.animateWalk(ModAnimationDefinitions.MODEL_WALK,limbSwing,
+				limbSwingAmount ,2f,2.5f);
+		this.animate(((DreadhoofEntity) entity).idleAnimationState, ModAnimationDefinitions.MODEL_STANDING_STILL
+		,ageInTicks,1f);
+	}
+
+	private void applyHeadRotation(float pNetHeadYaw, float pHeadPitch, float pAgeInTicks) {
+		pNetHeadYaw = Mth.clamp(pNetHeadYaw, -30.0F, 30.0F);
+		pHeadPitch = Mth.clamp(pHeadPitch, -25.0F, 45.0F);
+
+		this.cap.yRot = pNetHeadYaw * ((float)Math.PI / 180F);
+		this.cap.xRot = pHeadPitch * ((float)Math.PI / 180F);
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay,
+							   float red, float green, float blue, float alpha) {
 		dreadhoof.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 

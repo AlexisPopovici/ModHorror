@@ -10,7 +10,7 @@ import net.minecraft.resources.ResourceLocation;
 
 public class DreadhoofRenderer extends MobRenderer<DreadhoofEntity, DreadhoofModel<DreadhoofEntity>> {
     public DreadhoofRenderer(EntityRendererProvider.Context pContext){
-        super(pContext, new DreadhoofModel<>(pContext.bakeLayer(ModModelLayers.DREADHOOF_LAYER)), 1f);
+        super(pContext, new DreadhoofModel<>(pContext.bakeLayer(ModModelLayers.DREADHOOF_LAYER)), 0.6f);
     }
 
     @Override

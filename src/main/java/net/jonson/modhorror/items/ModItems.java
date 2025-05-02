@@ -1,10 +1,12 @@
 package net.jonson.modhorror.items;
 
 import net.jonson.modhorror.ModHorror;
+import net.jonson.modhorror.entity.ModEntities;
 import net.jonson.modhorror.items.custom.FuelItem;
 import net.jonson.modhorror.items.custom.MetalDetectorItem;
 import net.jonson.modhorror.items.custom.SapphireDetectorItem;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -54,6 +56,10 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.SAPPHIRE, 1, 1,
                         new Item.Properties()));
 
+    /// OUL DE DREADHOOF
+    public static final RegistryObject<Item> DREADHOOF_SPAWN_EGG = ITEMS.register("dreadhoof_spawn_egg"
+            , () -> new ForgeSpawnEggItem(ModEntities.DREADHOOF, 0x110222, 0xa79d92
+            , new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
