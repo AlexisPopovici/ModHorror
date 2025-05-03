@@ -121,6 +121,8 @@ public class DreadhoofModel<T extends Entity> extends HierarchicalModel<T> {
 				limbSwingAmount ,2f,2.5f);
 		this.animate(((DreadhoofEntity) entity).idleAnimationState, ModAnimationDefinitions.MODEL_STANDING_STILL
 		,ageInTicks,1f);
+		this.animate(((DreadhoofEntity) entity).attackAnimationState, ModAnimationDefinitions.MODEL_ATTACK
+				,ageInTicks,1f);
 	}
 
 	private void applyHeadRotation(float pNetHeadYaw, float pHeadPitch, float pAgeInTicks) {

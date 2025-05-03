@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-27T02:05:05.5527272	Recipes
+// 1.20.1	2025-05-03T22:32:08.8317257	Recipes
 f0b3d66664720aba7c83d7fc13e9664dab087994 data/modhorror/advancements/recipes/misc/bloody_sapphire.json
 944ad5262c0f8fde1d24b115561e5478b202680e data/modhorror/advancements/recipes/misc/bloody_sapphire_block.json
 26f66e5cc2640e0bf83d97664c70ceb40677638e data/modhorror/advancements/recipes/misc/metal_detector.json
@@ -17,6 +17,7 @@ e7805ea2ed7f35a1ddd3a907ac27e471b7a065ba data/modhorror/advancements/recipes/mis
 d59ee1ee0ec5417fa927a439eead3013c00f8839 data/modhorror/advancements/recipes/misc/sapphire_from_smelting_nether_sapphire_ore.json
 16aaa3b84ddf2cd9b0b4f7bf2cb81bf3640b2f60 data/modhorror/advancements/recipes/misc/sapphire_from_smelting_raw_sapphire.json
 679a0f093eb68078f93242fc9e082e6fa8c0f5f7 data/modhorror/advancements/recipes/misc/sapphire_from_smelting_sapphire_ore.json
+f91728d1d8d9eec8d635af80761dbb09be31c7cd data/modhorror/advancements/recipes/misc/sapphire_sword.json
 77ee7dd43ef7ee448f791cdf61cfc3bdd97d1589 data/modhorror/recipes/bloody_sapphire.json
 a644e70a4d5dd9815ad901074aadac93cae409f9 data/modhorror/recipes/bloody_sapphire_block.json
 57fc079fa62d6b5fa2d5c809f612e099da793b17 data/modhorror/recipes/metal_detector.json
@@ -35,3 +36,4 @@ d8c56f27e383948b133e40ef6c1bb07b9c27dbc7 data/modhorror/recipes/sapphire_from_bl
 a3d88cae26c9954dddfcee3bf532766c501f58ed data/modhorror/recipes/sapphire_from_smelting_nether_sapphire_ore.json
 f4f05b854cf120fbb70ef0a00f1e5b1df0d30fa4 data/modhorror/recipes/sapphire_from_smelting_raw_sapphire.json
 f630e478cb75d028db76eb99b9a0fc81898daa24 data/modhorror/recipes/sapphire_from_smelting_sapphire_ore.json
+4ef4f2b113edba655454a169d20bc8d01a9abbb0 data/modhorror/recipes/sapphire_sword.json
