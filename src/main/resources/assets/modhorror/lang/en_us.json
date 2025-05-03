@@ -36,11 +36,12 @@
 
 
 
-  "block.modhorror.sapphire_pickaxe": "Sapphire Pickaxe",
-  "block.modhorror.sapphire_axe": "Sapphire Axe",
-  "block.modhorror.sapphire_sword": "Sapphire Sword",
-  "block.modhorror.sapphire_shovel": "Sapphire Shovel",
-  "block.modhorror.sapphire_hoe": "Sapphire Hoe",
+  "item.modhorror.sapphire_pickaxe": "Sapphire Pickaxe",
+  "item.modhorror.sapphire_axe": "Sapphire Axe",
+  "item.modhorror.sapphire_sword": "Sapphire Sword",
+  "item.modhorror.sapphire_shovel": "Sapphire Shovel",
+  "item.modhorror.sapphire_hoe": "Sapphire Hoe",
+  "item.modhorror.dreadhoof_spawn_egg": "Dreadhoof Spawn Egg",
 
 
   "tooltip.modhorror.sapphire_detector.tooltip": "Finds valuable Sapphire underground!",
