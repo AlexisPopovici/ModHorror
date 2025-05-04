@@ -69,6 +69,14 @@ public class ModCreativeModTabs {
                         /// DREADHOOF EGG
                         output.accept(ModItems.DREADHOOF_SPAWN_EGG.get());
 
+                        ///  ARMURA
+
+                        output.accept(ModItems.SAPPHIRE_HELMET.get());
+                        output.accept(ModItems.SAPPHIRE_CHESTPLATE.get());
+                        output.accept(ModItems.SAPPHIRE_LEGGINGS.get());
+                        output.accept(ModItems.SAPPHIRE_BOOTS.get());
+
+
                     })
                     .build());
 
