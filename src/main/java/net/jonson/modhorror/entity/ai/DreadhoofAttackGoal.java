@@ -17,6 +17,8 @@ public class DreadhoofAttackGoal extends MeleeAttackGoal {
         entity = ((DreadhoofEntity) pMob);
     }
 
+
+
     @Override
     public void start() {
         super.start();
@@ -79,6 +81,14 @@ public class DreadhoofAttackGoal extends MeleeAttackGoal {
             this.ticksUntilNextAttack = Math.max(this.ticksUntilNextAttack - 1, 0);
         }
     }
+
+    @Override
+    protected double getAttackReachSqr(LivingEntity target) {
+
+        return  0.8 * (this.mob.getBbWidth() + target.getBbWidth()) * (this.mob.getBbWidth() + target.getBbWidth()) ;
+    }
+
+
 
     @Override
     public void stop() {

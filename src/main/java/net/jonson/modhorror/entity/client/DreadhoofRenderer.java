@@ -26,4 +26,10 @@ public class DreadhoofRenderer extends MobRenderer<DreadhoofEntity, DreadhoofMod
 
         super.render(pEntity, pEntityYaw, pPartialTicks, pPoseStack, pBuffer, pPackedLight);
     }
+
+    @Override
+    protected void scale(DreadhoofEntity entity, PoseStack poseStack, float partialTickTime) {
+        poseStack.scale(1.6F, 1.6F, 1.6F);
+        super.scale(entity, poseStack, partialTickTime);
+    }
 }

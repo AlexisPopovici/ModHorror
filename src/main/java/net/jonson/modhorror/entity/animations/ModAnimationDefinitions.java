@@ -7,6 +7,7 @@ import net.minecraft.client.animation.KeyframeAnimations;
 
 public class ModAnimationDefinitions {
 
+
     public static final AnimationDefinition MODEL_STANDING_STILL = AnimationDefinition.Builder.withLength(4.16667f).looping()
             .addAnimation("mana_dreapta",
                     new AnimationChannel(AnimationChannel.Targets.POSITION,
