@@ -1,6 +1,7 @@
 package net.jonson.modhorror.datagen;
 
 import net.jonson.modhorror.ModHorror;
+import net.jonson.modhorror.blocks.ModBlocks;
 import net.jonson.modhorror.items.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -27,5 +28,17 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.SAPPHIRE_LEGGINGS.get())
                 .add(ModItems.SAPPHIRE_BOOTS.get());
 
+
+        this.tag(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.PINE_LOG.get().asItem())
+                .add(ModBlocks.PINE_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_PINE_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_PINE_WOOD.get().asItem());
+
+        this.tag(ItemTags.PLANKS)
+                .add(ModBlocks.PINE_PLANKS.get().asItem());
     }
-}
+    }
+
+
+

@@ -53,5 +53,13 @@
   "tooltip.modhorror.sapphire_detector.tooltip": "Finds valuable Sapphire underground!",
   "tooltip.modhorror.metal_detector.tooltip": "Finds valuable metals underground!",
   "tooltip.modhorror.galaxy_block.tooltip": "A piece of the universe, holding secrets no player should uncover.",
-  "tooltip.modhorror.bloody_sapphire_block.tooltip" : "It hums. It glows. It watches."
+  "tooltip.modhorror.bloody_sapphire_block.tooltip" : "It hums. It glows. It watches.",
+
+
+  "block.modhorror.pine_log": "Pine Log",
+  "block.modhorror.pine_planks": "Pine Planks",
+  "block.modhorror.pine_wood": "Pine Wood",
+  "block.modhorror.stripped_pine_log": "Stripped Pine Log",
+  "block.modhorror.stripped_pine_wood": "Stripped Pine Wood",
+  "block.modhorror.pine_leaves": "Pine Leaves"
 }
