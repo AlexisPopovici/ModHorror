@@ -1,15 +1,44 @@
 {
   "minecraft:recipes/decorations/crafting_table": {
     "criteria": {
-      "unlock_right_away": "2025-03-28 16:32:47 +0200"
+      "unlock_right_away": "2025-06-09 00:46:41 +0300"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:flower_forest": "2025-03-28 16:32:48 +0200"
+      "minecraft:cherry_grove": "2025-06-09 00:48:51 +0300",
+      "minecraft:river": "2025-06-09 00:46:47 +0300",
+      "minecraft:stony_shore": "2025-06-09 00:46:42 +0300",
+      "minecraft:forest": "2025-06-09 00:50:33 +0300",
+      "minecraft:meadow": "2025-06-09 00:50:45 +0300",
+      "minecraft:plains": "2025-06-09 00:46:44 +0300"
     },
     "done": false
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2025-06-09 00:48:39 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/misc/bloody_sapphire_block": {
+    "criteria": {
+      "has_bloody_sapphire": "2025-06-09 00:48:40 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/misc/sapphire_detector": {
+    "criteria": {
+      "has_bloody_sapphire": "2025-06-09 00:48:40 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/misc/metal_detector": {
+    "criteria": {
+      "has_bloody_sapphire": "2025-06-09 00:48:40 +0300"
+    },
+    "done": true
   },
   "DataVersion": 3465
 }

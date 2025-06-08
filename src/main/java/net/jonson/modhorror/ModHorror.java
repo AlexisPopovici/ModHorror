@@ -41,6 +41,8 @@ public class        ModHorror {
         ModSounds.register(modEventBus);
         ModEntities.register(modEventBus);
 
+
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);

@@ -8,10 +8,13 @@ import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.BonusLevelTableCondition;
+import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -63,8 +66,24 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.PINE_PLANKS.get());
         this.dropSelf(ModBlocks.PINE_SAPLING.get());
 
-        this.add(ModBlocks.PINE_LEAVES.get(), block ->
-                createLeavesDrops(block, ModBlocks.PINE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.PINE_LEAVES.get(), block -> LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1))
+                        .add(applyExplosionDecay(block,
+                                LootItem.lootTableItem(ModBlocks.PINE_SAPLING.get())
+                                        .when(BonusLevelTableCondition.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE,
+                                                NORMAL_LEAVES_SAPLING_CHANCES))
+                        ))
+                )
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1))
+                        .add(applyExplosionDecay(block,
+                                LootItem.lootTableItem(ModItems.PINE_CONE.get())
+                                        .when(BonusLevelTableCondition.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE,
+                                                NORMAL_LEAVES_SAPLING_CHANCES))
+                        ))
+                )
+        );
 
     }
 

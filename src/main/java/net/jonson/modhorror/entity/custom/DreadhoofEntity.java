@@ -2,6 +2,7 @@
 
 
     import net.jonson.modhorror.entity.ai.DreadhoofAttackGoal;
+    import net.jonson.modhorror.items.ModItems;
     import net.minecraft.network.syncher.EntityDataAccessor;
     import net.minecraft.network.syncher.EntityDataSerializers;
     import net.minecraft.network.syncher.SynchedEntityData;
@@ -118,6 +119,15 @@
 
 
 
+        }
+
+        @Override
+        protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHit) {
+            super.dropCustomDeathLoot(source, looting, recentlyHit);
+
+            if (source.getEntity() instanceof Player) {
+                this.spawnAtLocation(ModItems.BLOODY_SAPPHIRE.get(), 1);
+            }
         }
 
 
