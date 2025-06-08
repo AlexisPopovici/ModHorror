@@ -38,7 +38,8 @@ public class ModItems {
             () -> new FuelItem(new Item.Properties(), 400));
 
     public static final RegistryObject<Item> SAPPHIRE_STAFF = ITEMS.register("sapphire_staff",
-            () -> new Item(new Item.Properties().stacksTo(1)));
+            () -> new SwordItem(ModToolTiers.SAPPHIRE,100,2,
+                    new Item.Properties()));
 
     public static final RegistryObject<Item> SAPPHIRE_SWORD = ITEMS.register("sapphire_sword",
             () -> new SwordItem(ModToolTiers.SAPPHIRE,6,2,
