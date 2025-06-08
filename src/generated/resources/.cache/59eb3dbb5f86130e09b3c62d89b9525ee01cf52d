@@ -1,12 +1,13 @@
-// 1.20.1	2025-06-08T13:03:09.1012219	Loot Tables
+// 1.20.1	2025-06-08T17:27:27.435279	Loot Tables
 04f9a275ac05d716845b2175f53b700bc1d7da4e data/modhorror/loot_tables/blocks/bloody_sapphire_block.json
 eea52555659b07784ce79a47d5c81fd105e3b539 data/modhorror/loot_tables/blocks/deepslate_sapphire_ore.json
 0f89ceb8810d4f46ff7d19aed9dc58cb2d2333dc data/modhorror/loot_tables/blocks/end_stone_sapphire_ore.json
 e146cb56c04c079a89d2463b4a1c53ee48d986ee data/modhorror/loot_tables/blocks/galaxy_block.json
 6ce94520fd0933541dbcf1a890caf653cd1e8e40 data/modhorror/loot_tables/blocks/nether_sapphire_ore.json
-da815ef147af17ead34fb5af2ed5021848a67776 data/modhorror/loot_tables/blocks/pine_leaves.json
+e8605780b3fd96a378cfb169f2769656d1344484 data/modhorror/loot_tables/blocks/pine_leaves.json
 be4723ea5ae79975f1cfebaf4b7ad02256c6573f data/modhorror/loot_tables/blocks/pine_log.json
 38f8b67eb8c7e48717dc862e7f52b857550ff92d data/modhorror/loot_tables/blocks/pine_planks.json
+349f5b37e05caed9dc96d519849e984b75b3d9fb data/modhorror/loot_tables/blocks/pine_sapling.json
 6f4b87ff5bacc035a1112913d6954b80a3949ffd data/modhorror/loot_tables/blocks/pine_wood.json
 6942b2f164d02789e207669257af16c5582d61f8 data/modhorror/loot_tables/blocks/raw_sapphire_block.json
 8bab63652f017b04cbb3027a953f3aa1b75d0a32 data/modhorror/loot_tables/blocks/sapphire_block.json
