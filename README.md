@@ -2,7 +2,7 @@
 - small introduction
 
 ## Requirements
-- requirements (probably minecraft 1.21.4)
+- requirements minecraft 1.20.1
 
 ## Installing
 - how to install (probably in CurseForge)
