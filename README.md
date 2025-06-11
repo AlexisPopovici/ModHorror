@@ -7,7 +7,8 @@
 ## Installing
 - how to install (probably in CurseForge)
 
-## Describing the app - (non-tehnical description - user stories, backlog creation, features list, design description, behavior description)
+## Describing the app
+ (non-tehnical description - user stories, backlog creation, features list, design description, behavior description)
 
 ### 1. User stories
 1.	As a player, I want to experience unsettling and unpredictable events so that I feel a constant sense of fear.
