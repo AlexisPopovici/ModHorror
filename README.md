@@ -26,5 +26,5 @@
 ![](https://github.com/Pebit/minecraft-horror-mod/blob/main/docs/backlog_creation.png)
 
 
-Demo Checkpoint 2: https://www.youtube.com/watch?v=AgxbykWT9uU
+Demo Checkpoint 2: https://www.youtube.com/watch?v=AgxbykWT9uU <br>
 Final Demo: https://youtu.be/TeT-zylU13g?si=sKDK9xDVWSIQ6ksS
