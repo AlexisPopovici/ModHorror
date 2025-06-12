@@ -25,12 +25,6 @@
     },
     "done": true
   },
-  "modhorror:recipes/misc/bloody_sapphire_block": {
-    "criteria": {
-      "has_bloody_sapphire": "2025-06-09 00:48:40 +0300"
-    },
-    "done": true
-  },
   "minecraft:story/root": {
     "criteria": {
       "crafting_table": "2025-06-12 04:04:04 +0300"
@@ -52,18 +46,6 @@
   "modhorror:recipes/misc/sapphire": {
     "criteria": {
       "has_sapphire_block": "2025-06-12 04:07:47 +0300"
-    },
-    "done": true
-  },
-  "modhorror:recipes/misc/sapphire_block": {
-    "criteria": {
-      "has_sapphire": "2025-06-12 04:07:48 +0300"
-    },
-    "done": true
-  },
-  "modhorror:recipes/misc/sapphire_sword": {
-    "criteria": {
-      "has_sapphire": "2025-06-12 04:07:48 +0300"
     },
     "done": true
   },
@@ -214,6 +196,132 @@
   "modhorror:recipes/redstone/sapphire_pressure_plate": {
     "criteria": {
       "has_sapphire": "2025-06-12 04:17:41 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/building_blocks/sapphire_stairs_alt": {
+    "criteria": {
+      "has_sapphire_block": "2025-06-12 05:14:39 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/tools/sapphire_axe": {
+    "criteria": {
+      "has_sapphire": "2025-06-12 05:14:39 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/tools/sapphire_hoe_alt": {
+    "criteria": {
+      "has_sapphire": "2025-06-12 05:14:39 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/combat/sapphire_boots": {
+    "criteria": {
+      "has_sapphire": "2025-06-12 05:14:39 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/tools/sapphire_axe_alt": {
+    "criteria": {
+      "has_sapphire": "2025-06-12 05:14:39 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/building_blocks/bloody_sapphire_block": {
+    "criteria": {
+      "has_bloody_sapphire": "2025-06-12 05:14:39 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/combat/sapphire_sword": {
+    "criteria": {
+      "has_sapphire": "2025-06-12 05:14:39 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/combat/sapphire_helmet": {
+    "criteria": {
+      "has_sapphire": "2025-06-12 05:14:39 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/tools/sapphire_hoe": {
+    "criteria": {
+      "has_sapphire": "2025-06-12 05:14:39 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/building_blocks/sapphire_block": {
+    "criteria": {
+      "has_sapphire": "2025-06-12 05:14:39 +0300"
+    },
+    "done": true
+  },
+  "minecraft:nether/obtain_blaze_rod": {
+    "criteria": {
+      "blaze_rod": "2025-06-12 05:15:47 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/tools/sapphire_pickaxe": {
+    "criteria": {
+      "has_sapphire": "2025-06-12 05:14:39 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/building_blocks/galaxy_block": {
+    "criteria": {
+      "has_nether_star": "2025-06-12 05:17:14 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/blaze_powder": {
+    "criteria": {
+      "has_blaze_rod": "2025-06-12 05:15:47 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/misc/bloody_sapphire": {
+    "criteria": {
+      "has_bloody_sapphire_block": "2025-06-12 05:16:22 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/tools/sapphire_shovel": {
+    "criteria": {
+      "has_sapphire": "2025-06-12 05:14:39 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/combat/sapphire_staff": {
+    "criteria": {
+      "has_sapphire": "2025-06-12 05:14:39 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/beacon": {
+    "criteria": {
+      "has_nether_star": "2025-06-12 05:17:14 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/combat/sapphire_leggings": {
+    "criteria": {
+      "has_sapphire": "2025-06-12 05:14:39 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/brewing_stand": {
+    "criteria": {
+      "has_blaze_rod": "2025-06-12 05:15:47 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/combat/sapphire_chestplate": {
+    "criteria": {
+      "has_sapphire": "2025-06-12 05:14:39 +0300"
     },
     "done": true
   },

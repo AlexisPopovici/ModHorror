@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "modhorror:bloody_sapphire"
+    },
+    "S": {
+      "item": "modhorror:sapphire"
+    }
+  },
+  "pattern": [
+    "BS",
+    "SA",
+    " A"
+  ],
+  "result": {
+    "item": "modhorror:sapphire_axe"
+  },
+  "show_notification": true
+}

@@ -217,19 +217,21 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter, new ResourceLocation(ModHorror.MOD_ID, "sapphire_hoe_alt"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SAPPHIRE_AXE.get())
-                .pattern("SS")
+                .pattern("SB")
                 .pattern("AS")
                 .pattern("A ")
                 .define('S', ModItems.SAPPHIRE.get())
+                .define('B', ModItems.BLOODY_SAPPHIRE.get())
                 .define('A', Items.STICK)
-                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .unlockedBy(getHasName(ModItems.BLOODY_SAPPHIRE.get()), has(ModItems.BLOODY_SAPPHIRE.get()))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SAPPHIRE_AXE.get())
-                .pattern("SS")
-                .pattern("AS")
-                .pattern("A ")
+                .pattern("BS")
+                .pattern("SA")
+                .pattern(" A")
                 .define('S', ModItems.SAPPHIRE.get())
+                .define('B', ModItems.BLOODY_SAPPHIRE.get())
                 .define('A', Items.STICK)
                 .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
                 .save(pWriter, new ResourceLocation(ModHorror.MOD_ID, "sapphire_axe_alt"));
@@ -273,22 +275,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         // weapons
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SAPPHIRE_SWORD.get())
                 .pattern("S")
-                .pattern("S")
+                .pattern("B")
                 .pattern("A")
                 .define('S', ModItems.SAPPHIRE.get())
+                .define('B', ModItems.BLOODY_SAPPHIRE.get())
                 .define('A', Items.STICK)
                 .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
                 .save(pWriter);
 
         // to be implemented: STAFF
-        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SAPPHIRE_SWORD.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SAPPHIRE_STAFF.get())
                 .pattern("NSN")
                 .pattern(" B ")
                 .pattern(" B ")
-                .define('S', ModItems.SAPPHIRE.get())
+                .define('S', ModItems.BLOODY_SAPPHIRE.get())
                 .define('N', Items.NETHER_STAR)
                 .define('B', Items.BLAZE_ROD)
-                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .unlockedBy(getHasName(ModItems.BLOODY_SAPPHIRE.get()), has(ModItems.BLOODY_SAPPHIRE.get()))
                 .save(pWriter);
 
         // armour

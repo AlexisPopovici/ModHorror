@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "modhorror:sapphire"
+    }
+  },
+  "pattern": [
+    "S",
+    "A",
+    "A"
+  ],
+  "result": {
+    "item": "modhorror:sapphire_shovel"
+  },
+  "show_notification": true
+}

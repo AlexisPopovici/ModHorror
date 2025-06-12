@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "pattern": [
+    "OOO",
+    "ONO",
+    "OOO"
+  ],
+  "result": {
+    "item": "modhorror:galaxy_block"
+  },
+  "show_notification": true
+}

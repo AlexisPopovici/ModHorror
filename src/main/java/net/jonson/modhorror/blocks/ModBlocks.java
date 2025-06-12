@@ -25,6 +25,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.jonson.modhorror.blocks.custom.PineLeavesBlock;
 
 import java.util.function.Supplier;
 
@@ -127,23 +128,10 @@ public class ModBlocks {
                     return 5;
                 }
             });
-    public static final RegistryObject<Block> PINE_LEAVES = registerBlock("pine_leaves",
-            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)){
-                @Override
-                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-                    return true;
-                }
-
-                @Override
-                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-                    return 60;
-                }
-
-                @Override
-                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-                    return 30;
-                }
-            });
+    public static final RegistryObject<Block> PINE_LEAVES = registerBlock(
+            "pine_leaves",
+            PineLeavesBlock::new
+    );
 
 
     public static final RegistryObject<Block> HORROR_DOOR = registerBlock("horror_door",
