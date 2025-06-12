@@ -39,7 +39,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 100, "sapphire");
 
         // blocks:
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_BLOCK.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GALAXY_BLOCK.get())
+                .pattern("OOO")
+                .pattern("ONO")
+                .pattern("OOO")
+                .define('O', Items.OBSIDIAN)
+                .define('N', Items.NETHER_STAR)
+                .unlockedBy(getHasName(Items.NETHER_STAR), has(Items.NETHER_STAR))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_BLOCK.get())
                 .pattern("SSS")
                 .pattern("SSS")
                 .pattern("SSS")
@@ -52,7 +61,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RAW_SAPPHIRE_BLOCK.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_SAPPHIRE_BLOCK.get())
                 .pattern("SSS")
                 .pattern("SSS")
                 .pattern("SSS")
@@ -65,7 +74,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.RAW_SAPPHIRE_BLOCK.get()), has(ModBlocks.RAW_SAPPHIRE_BLOCK.get()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BLOODY_SAPPHIRE_BLOCK.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOODY_SAPPHIRE_BLOCK.get())
                 .pattern("SSS")
                 .pattern("SSS")
                 .pattern("SSS")
@@ -86,13 +95,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
                 .save(pWriter); // default name
 
-//        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_STAIRS.get(), 4)
-//                .pattern("S  ")
-//                .pattern("SS ")
-//                .pattern("SSS")
-//                .define('S', ModBlocks.SAPPHIRE_BLOCK.get())
-//                .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
-//                .save(pWriter, new ResourceLocation(ModHorror.MOD_ID, "sapphire_stairs_alt"));
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_STAIRS.get(), 4)
+                .pattern("S  ")
+                .pattern("SS ")
+                .pattern("SSS")
+                .define('S', ModBlocks.SAPPHIRE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
+                .save(pWriter, new ResourceLocation(ModHorror.MOD_ID, "sapphire_stairs_alt"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_SLAB.get(), 6)
                 .pattern("SSS")
@@ -272,6 +281,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter);
 
         // to be implemented: STAFF
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SAPPHIRE_SWORD.get())
+                .pattern("NSN")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('S', ModItems.SAPPHIRE.get())
+                .define('N', Items.NETHER_STAR)
+                .define('B', Items.BLAZE_ROD)
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .save(pWriter);
 
         // armour
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SAPPHIRE_HELMET.get())
