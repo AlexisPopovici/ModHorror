@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bloody_sapphire": {
+    "has_iron_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "modhorror:bloody_sapphire"
+              "minecraft:iron_ingot"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_bloody_sapphire",
+      "has_iron_ingot",
       "has_the_recipe"
     ]
   ],

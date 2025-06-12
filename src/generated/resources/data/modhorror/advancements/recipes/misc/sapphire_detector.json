@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bloody_sapphire": {
+    "has_sapphire": {
       "conditions": {
         "items": [
           {
             "items": [
-              "modhorror:bloody_sapphire"
+              "modhorror:sapphire"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_bloody_sapphire",
+      "has_sapphire",
       "has_the_recipe"
     ]
   ],

@@ -71,13 +71,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
                 .save(pWriter); // default name
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_STAIRS.get(), 4)
-                .pattern("S  ")
-                .pattern("SS ")
-                .pattern("SSS")
-                .define('S', ModBlocks.SAPPHIRE_BLOCK.get())
-                .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
-                .save(pWriter, new ResourceLocation(ModHorror.MOD_ID, "sapphire_stairs_alt"));
+//        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_STAIRS.get(), 4)
+//                .pattern("S  ")
+//                .pattern("SS ")
+//                .pattern("SSS")
+//                .define('S', ModBlocks.SAPPHIRE_BLOCK.get())
+//                .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
+//                .save(pWriter, new ResourceLocation(ModHorror.MOD_ID, "sapphire_stairs_alt"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_SLAB.get(), 6)
                 .pattern("SSS")
@@ -107,6 +107,42 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('R', Items.STICK)
                 .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
                 .save(pWriter);
+
+        // wood blocks
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINE_WOOD.get(), 3)
+                .pattern("LL")
+                .pattern("LL")
+                .define('L', ModBlocks.PINE_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.PINE_LOG.get()), has(ModBlocks.PINE_LOG.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_PINE_WOOD.get(), 3)
+                .pattern("LL")
+                .pattern("LL")
+                .define('L', ModBlocks.STRIPPED_PINE_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.PINE_LOG.get()), has(ModBlocks.PINE_LOG.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINE_PLANKS.get(), 4)
+                .requires(ModBlocks.PINE_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.PINE_LOG.get()), has(ModBlocks.PINE_LOG.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINE_PLANKS.get(), 4)
+                .requires(ModBlocks.PINE_WOOD.get())
+                .unlockedBy(getHasName(ModBlocks.PINE_LOG.get()), has(ModBlocks.PINE_LOG.get()))
+                .save(pWriter, new ResourceLocation(ModHorror.MOD_ID, "pine_planks_alt1"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINE_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_PINE_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.PINE_LOG.get()), has(ModBlocks.PINE_LOG.get()))
+                .save(pWriter, new ResourceLocation(ModHorror.MOD_ID, "pine_planks_alt2"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINE_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_PINE_WOOD.get())
+                .unlockedBy(getHasName(ModBlocks.PINE_LOG.get()), has(ModBlocks.PINE_LOG.get()))
+                .save(pWriter, new ResourceLocation(ModHorror.MOD_ID, "pine_planks_alt3"));
 
         // tools and weapons
 

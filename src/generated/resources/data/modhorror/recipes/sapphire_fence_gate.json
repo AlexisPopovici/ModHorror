@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "R": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "modhorror:sapphire_block"
+    }
+  },
+  "pattern": [
+    "RSR",
+    "RSR"
+  ],
+  "result": {
+    "item": "modhorror:sapphire_fence_gate"
+  },
+  "show_notification": true
+}

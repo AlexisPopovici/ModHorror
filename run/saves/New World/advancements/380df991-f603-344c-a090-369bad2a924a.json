@@ -33,13 +33,163 @@
   },
   "modhorror:recipes/misc/sapphire_detector": {
     "criteria": {
-      "has_bloody_sapphire": "2025-06-09 00:48:40 +0300"
+      "has_sapphire": "2025-06-12 04:11:48 +0300"
     },
     "done": true
   },
-  "modhorror:recipes/misc/metal_detector": {
+  "minecraft:story/root": {
     "criteria": {
-      "has_bloody_sapphire": "2025-06-09 00:48:40 +0300"
+      "crafting_table": "2025-06-12 04:04:04 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/charcoal": {
+    "criteria": {
+      "has_log": "2025-06-12 04:04:17 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2025-06-12 04:04:17 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/misc/sapphire": {
+    "criteria": {
+      "has_sapphire_block": "2025-06-12 04:07:47 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/misc/sapphire_block": {
+    "criteria": {
+      "has_sapphire": "2025-06-12 04:07:48 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/misc/sapphire_sword": {
+    "criteria": {
+      "has_sapphire": "2025-06-12 04:07:48 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/building_blocks/sapphire_fence_gate": {
+    "criteria": {
+      "has_sapphire_block": "2025-06-12 04:11:48 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/ladder": {
+    "criteria": {
+      "has_stick": "2025-06-12 04:12:24 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/building_blocks/stripped_pine_wood": {
+    "criteria": {
+      "has_pine_log": "2025-06-12 04:11:48 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/building_blocks/sapphire_fence": {
+    "criteria": {
+      "has_sapphire_block": "2025-06-12 04:11:48 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/campfire": {
+    "criteria": {
+      "has_stick": "2025-06-12 04:12:24 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/building_blocks/sapphire_slab": {
+    "criteria": {
+      "has_sapphire_block": "2025-06-12 04:11:48 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_hoe": {
+    "criteria": {
+      "has_stick": "2025-06-12 04:12:24 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_pickaxe": {
+    "criteria": {
+      "has_stick": "2025-06-12 04:12:24 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_axe": {
+    "criteria": {
+      "has_stick": "2025-06-12 04:12:24 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/building_blocks/pine_planks": {
+    "criteria": {
+      "has_pine_log": "2025-06-12 04:11:48 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/building_blocks/pine_planks_alt1": {
+    "criteria": {
+      "has_pine_log": "2025-06-12 04:11:48 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/building_blocks/pine_planks_alt2": {
+    "criteria": {
+      "has_pine_log": "2025-06-12 04:11:48 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/building_blocks/pine_planks_alt3": {
+    "criteria": {
+      "has_pine_log": "2025-06-12 04:11:48 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_shovel": {
+    "criteria": {
+      "has_stick": "2025-06-12 04:12:24 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/stick": {
+    "criteria": {
+      "has_planks": "2025-06-12 04:12:11 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/building_blocks/sapphire_wall": {
+    "criteria": {
+      "has_sapphire_block": "2025-06-12 04:11:48 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/wooden_sword": {
+    "criteria": {
+      "has_stick": "2025-06-12 04:12:24 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/building_blocks/pine_wood": {
+    "criteria": {
+      "has_pine_log": "2025-06-12 04:11:48 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/barrel": {
+    "criteria": {
+      "has_planks": "2025-06-12 04:12:11 +0300"
+    },
+    "done": true
+  },
+  "modhorror:recipes/building_blocks/sapphire_stairs": {
+    "criteria": {
+      "has_sapphire_block": "2025-06-12 04:11:48 +0300"
     },
     "done": true
   },
