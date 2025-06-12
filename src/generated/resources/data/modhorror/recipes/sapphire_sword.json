@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "modhorror:sapphire"
+    }
+  },
+  "pattern": [
+    " S ",
+    " S ",
+    " A "
+  ],
+  "result": {
+    "item": "modhorror:sapphire_sword"
+  },
+  "show_notification": true
+}

@@ -5,6 +5,7 @@ import net.jonson.modhorror.blocks.ModBlocks;
 import net.jonson.modhorror.items.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.vehicle.Minecart;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.MinecartItem;
@@ -37,21 +38,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreBlasting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 0.25f,
                 100, "sapphire");
 
-
+        // blocks:
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_BLOCK.get())
                 .pattern("SSS")
                 .pattern("SSS")
                 .pattern("SSS")
                 .define('S', ModItems.SAPPHIRE.get())
-                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SAPPHIRE_SWORD.get())
-                .pattern(" S ")
-                .pattern(" S ")
-                .pattern(" A ")
-                .define('S', ModItems.SAPPHIRE.get())
-                .define('A', Items.STICK)
                 .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
                 .save(pWriter);
 
@@ -71,13 +63,70 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.BLOODY_SAPPHIRE.get()), has(ModItems.BLOODY_SAPPHIRE.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_STAIRS.get(), 4)
+                .pattern("  S")
+                .pattern(" SS")
+                .pattern("SSS")
+                .define('S', ModBlocks.SAPPHIRE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
+                .save(pWriter); // default name
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_STAIRS.get(), 4)
+                .pattern("S  ")
+                .pattern("SS ")
+                .pattern("SSS")
+                .define('S', ModBlocks.SAPPHIRE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
+                .save(pWriter, new ResourceLocation(ModHorror.MOD_ID, "sapphire_stairs_alt"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_SLAB.get(), 6)
+                .pattern("SSS")
+                .define('S', ModBlocks.SAPPHIRE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_WALL.get(), 6)
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModBlocks.SAPPHIRE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_FENCE.get(), 6)
+                .pattern("SRS")
+                .pattern("SRS")
+                .define('S', ModBlocks.SAPPHIRE_BLOCK.get())
+                .define('R', Items.STICK)
+                .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_FENCE_GATE.get())
+                .pattern("RSR")
+                .pattern("RSR")
+                .define('S', ModBlocks.SAPPHIRE_BLOCK.get())
+                .define('R', Items.STICK)
+                .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
+                .save(pWriter);
+
+        // tools and weapons
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SAPPHIRE_SWORD.get())
+                .pattern(" S ")
+                .pattern(" S ")
+                .pattern(" A ")
+                .define('S', ModItems.SAPPHIRE.get())
+                .define('A', Items.STICK)
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .save(pWriter);
+
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SAPPHIRE_DETECTOR.get())
                 .pattern(" AS")
                 .pattern(" S ")
                 .pattern("AA ")
                 .define('S', Items.STICK)
                 .define('A', ModItems.SAPPHIRE.get())
-                .unlockedBy(getHasName(ModItems.BLOODY_SAPPHIRE.get()), has(ModItems.BLOODY_SAPPHIRE.get()))
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.METAL_DETECTOR.get())
@@ -86,7 +135,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("AA ")
                 .define('S', Items.STICK)
                 .define('A', Items.IRON_INGOT)
-                .unlockedBy(getHasName(ModItems.BLOODY_SAPPHIRE.get()), has(ModItems.BLOODY_SAPPHIRE.get()))
+                .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BLOODY_SAPPHIRE.get(), 9)
