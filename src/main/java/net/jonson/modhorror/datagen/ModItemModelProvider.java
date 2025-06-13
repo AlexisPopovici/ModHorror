@@ -65,13 +65,11 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         trapdoorItem(ModBlocks.SAPPHIRE_TRAPDOOR);
 
-
         handheldItem(ModItems.SAPPHIRE_AXE);
         handheldItem(ModItems.SAPPHIRE_PICKAXE);
         handheldItem(ModItems.SAPPHIRE_SHOVEL);
         handheldItem(ModItems.SAPPHIRE_SWORD);
         handheldItem(ModItems.SAPPHIRE_HOE);
-
 
         withExistingParent(ModItems.DREADHOOF_SPAWN_EGG.getId().getPath(),mcLoc("item/template_spawn_egg"));
 
@@ -82,8 +80,6 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         saplingItem(ModBlocks.PINE_SAPLING);
 
-
-
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
@@ -91,7 +87,6 @@ public class ModItemModelProvider extends ItemModelProvider {
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(ModHorror.MOD_ID,"block/" + item.getId().getPath()));
     }
-
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
         final String MOD_ID = ModHorror.MOD_ID;
@@ -117,7 +112,8 @@ public class ModItemModelProvider extends ItemModelProvider {
                 ResourceLocation trimResLoc = new ResourceLocation(trimPath); // minecraft namespace
                 ResourceLocation trimNameResLoc = new ResourceLocation(MOD_ID, currentTrimName);
 
-                existingFileHelper.trackGenerated(trimResLoc, PackType.CLIENT_RESOURCES, ".png", "textures");
+                existingFileHelper.trackGenerated(trimResLoc, PackType.CLIENT_RESOURCES,
+                                        ".png", "textures");
 
 
                 getBuilder(currentTrimName)
@@ -144,12 +140,10 @@ public class ModItemModelProvider extends ItemModelProvider {
                 new ResourceLocation(ModHorror.MOD_ID,"item/" + item.getId().getPath()));
     }
 
-
     public void evenSimplerBlockItem(RegistryObject<Block> block) {
         this.withExistingParent(ModHorror.MOD_ID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
                 modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
     }
-
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
@@ -157,7 +151,6 @@ public class ModItemModelProvider extends ItemModelProvider {
                 new ResourceLocation(ModHorror.MOD_ID,"item/" + item.getId().getPath()));
 
     }
-
 
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
