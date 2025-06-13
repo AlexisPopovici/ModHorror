@@ -115,12 +115,10 @@ public class ModItemModelProvider extends ItemModelProvider {
                 existingFileHelper.trackGenerated(trimResLoc, PackType.CLIENT_RESOURCES,
                                         ".png", "textures");
 
-
                 getBuilder(currentTrimName)
                         .parent(new ModelFile.UncheckedModelFile("item/generated"))
                         .texture("layer0", armorItemResLoc)
                         .texture("layer1", trimResLoc);
-
 
                 this.withExistingParent(itemRegistryObject.getId().getPath(),
                                 mcLoc("item/generated"))
