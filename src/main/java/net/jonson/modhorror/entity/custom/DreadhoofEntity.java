@@ -2,6 +2,7 @@
 
 
     import net.jonson.modhorror.entity.ai.DreadhoofAttackGoal;
+    import net.jonson.modhorror.entity.animations.DreadhoofAnimationHelper;
     import net.jonson.modhorror.items.ModItems;
     import net.minecraft.network.syncher.EntityDataAccessor;
     import net.minecraft.network.syncher.EntityDataSerializers;
@@ -68,27 +69,10 @@
         }
 
         private void setupAnimationStates() {
-            if (this.isMoving()) {
-                this.idleAnimationState.stop();
-            } else if (!this.idleAnimationState.isStarted() && this.idleAnimationTimeout <= 0) {
-                this.idleAnimationTimeout = this.random.nextInt(40) + 80;
-                this.idleAnimationState.start(this.tickCount);
-            } else {
-                --this.idleAnimationTimeout;
-            }
-
-            if (this.isAttacking() && attackAnimationTimeout <= 0) {
-                attackAnimationTimeout = 25;
-                attackAnimationState.start(this.tickCount);
-            }
-            else{
-                --this.attackAnimationTimeout;
-            }
-
-            if(!this.isAttacking()){
-                attackAnimationState.stop();
-            }
+            DreadhoofAnimationHelper.updateIdleState(idleAnimationState, isMoving(), tickCount, random, idleAnimationTimeout);
+            attackAnimationTimeout = DreadhoofAnimationHelper.updateAttackState(isAttacking(), attackAnimationState, attackAnimationTimeout, tickCount);
         }
+
 
         @Override
         protected void updateWalkAnimation(float pPartialTick) {
