@@ -32,7 +32,7 @@ Some workflow Diagrams:
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/48932aa8-13c9-4484-9961-3f638c98aa6a" alt="Image 1" width="700"/>
-  <img src="https://github.com/user-attachments/assets/e962bb66-66d6-4ff8-b471-7af628c61682" alt="Image 2" width="900"/>
+  <img src="https://github.com/user-attachments/assets/e962bb66-66d6-4ff8-b471-7af628c61682" alt="Image 2" width="700"/>
 </p>
 
 Demo Checkpoint 2: https://www.youtube.com/watch?v=AgxbykWT9uU <br>
