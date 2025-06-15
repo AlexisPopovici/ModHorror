@@ -22,8 +22,8 @@
 9.	As a casual player, I want an option to adjust horror intensity so that I can control how scared I get.
 10.	As a griefed player, I want unsettling changes to my builds so that I feel like something is always watching me.
 
+![](https://github.com/user-attachments/assets/11aa25ec-c5c5-4a0a-ab2f-f7c81b3bb69e)
 
-![](https://github.com/Pebit/minecraft-horror-mod/blob/main/docs/backlog_creation.png)
 
 UML Diagram:
 ![](https://github.com/user-attachments/assets/ca5c69f6-f18c-4ab0-acee-d0ede1f0950b)
